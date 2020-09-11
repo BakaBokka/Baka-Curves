@@ -13,4 +13,4 @@
 
 
 ## Ссылка на github pages:
-https://bakabokka.github.io/Baka-News/
+https://bakabokka.github.io/Baka-Curves/
