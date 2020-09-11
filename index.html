@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baka Curves</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      href="./images/hippo-figure.png"
+      sizes="any"
+      type="image/svg+xml"
+    />
+  </head>
+
+  <body class="body">
+    <section class="curve">
+      <h1 class="curve__title">Кривая Безье</h1>
+      <form class="curve__form">
+        <div class="curve__form-content">
+          <fieldset class="curve__form-data">
+            <p class="curve__caption">dot 1</p>
+            <input
+              type="number"
+              class="curve__input"
+              placeholder="x1"
+              min="0"
+              max="400"
+              value="100"
+            />
+            <input
+              type="number"
+              class="curve__input"
+              placeholder="y1"
+              min="0"
+              max="400"
+              value="100"
+            />
+          </fieldset>
+
+          <fieldset class="curve__form-data">
+            <p class="curve__caption">dot 2</p>
+            <input
+              type="number"
+              class="curve__input"
+              placeholder="x2"
+              min="0"
+              max="400"
+              value="130"
+            />
+            <input
+              type="number"
+              class="curve__input"
+              placeholder="y2"
+              min="0"
+              max="400"
+              value="20"
+            />
+          </fieldset>
+
+          <fieldset class="curve__form-data">
+            <p class="curve__caption">dot 3</p>
+            <input type="number" class="curve__input" placeholder="x3" min="0"
+            max="400"
+            value="160"> <input type="number" class="curve__input"
+            placeholder="y3" min="0"
+            max="400" value="20">
+          </fieldset>
+
+          <fieldset class="curve__form-data">
+            <p class="curve__caption">dot 4</p>
+            <input
+              type="number"
+              class="curve__input"
+              placeholder="x4"
+              min="0"
+              max="400"
+              value="200"
+            />
+            <input
+              type="number"
+              class="curve__input"
+              placeholder="y4"
+              min="0"
+              max="400"
+              value="100"
+            />
+          </fieldset>
+        </div>
+        <button class="curve__button" type="submit">Задать точки</button>
+      </form>
+
+      <div class="curve__container">
+        <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M100 100 L 130 20, 160 20, 200 100"
+            stroke="gold"
+            fill="transparent"
+            stroke-width="1"
+            class="ruler"
+          />
+          <path
+            d="M100 100 C 130 20, 160 20, 200 100"
+            stroke="green"
+            fill="transparent"
+            stroke-width="5"
+            class="curve-path"
+          />
+
+          <circle
+            cx="100"
+            cy="100"
+            r="8"
+            stroke="transparent"
+            fill="orange"
+            stroke-width="5"
+            class="dot"
+          />
+          <circle
+            cx="130"
+            cy="20"
+            r="8"
+            stroke="transparent"
+            fill="orange"
+            stroke-width="5"
+            class="dot"
+          />
+          <circle
+            cx="160"
+            cy="20"
+            r="8"
+            stroke="transparent"
+            fill="orange"
+            stroke-width="5"
+            class="dot"
+          />
+          <circle
+            cx="200"
+            cy="100"
+            r="8"
+            stroke="transparent"
+            fill="orange"
+            stroke-width="5"
+            class="dot"
+          />
+        </svg>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
